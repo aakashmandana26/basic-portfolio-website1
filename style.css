@@ -1,0 +1,179 @@
+/* Default CSS */
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width : 90%;
+    margin : auto;
+    padding-top : 50px;
+} 
+
+.small-container{
+    display : flex;
+    width : 100%;
+    justify-content : space-between; 
+}
+
+a{
+    text-decoration: none;
+    color : black;
+}
+
+.logo a{
+    display : inline-block;
+    vertical-align: middle;
+}
+
+.logo img{
+    margin-right: 15px;
+    width : 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.logo h1{
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+.nav-right{
+    display : inline-block;
+    padding : 10px;
+    vertical-align: middle;
+    position : absolute;
+    right:230px;
+
+}
+
+.nav-right ul li{
+    list-style-type: none;
+    display: inline;
+    font-weight: 400;
+    margin-right: 5px;
+    padding-left: 20px;
+    font-size : 22px;
+} 
+
+.logo{
+    
+    display : inline-block;
+}
+
+.introduction{
+    display : flex;
+}
+
+.introduction h1{
+    margin: auto;
+    margin-left: 0;
+    font-size: 40px;
+}
+
+.introduction img{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.heading{
+    text-align: center;
+}
+
+hr{
+    height: 6px;
+    width: 80px;
+    background-color: #EB4747;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 8px;
+    border-radius: 25px;
+   
+}
+
+.skills-container{
+    padding-top: 100px;
+}
+
+.skills{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills a img{
+    width : 60px;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-around;
+    flex : 1;
+    flex-wrap: wrap;
+}
+
+.project{
+    text-align: center;
+    font-weight: 200;
+}
+
+.projects img{
+    width : 250px;
+    height: 250px;
+}
+
+.footer{
+    margin-top: 100px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 75px 75px 25px 75px;
+    border-radius: 25px 25px 0 0;
+}
+
+.footer h1{
+    font-size: 50px;
+}
+
+.footer .container{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.footer a{
+    color: white;
+    opacity: 0.8;
+    font-size: 25px;
+}
+
+@media(max-width : 780px){
+    /* CSS for navbar and logo */
+    .navbar .small-container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .logo a{
+        display: block;
+        margin: auto;
+    }
+    .logo a img{
+        display: block;
+        margin: auto;
+    }
+
+    /* css for introduction */
+
+    .introduction{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .introduction img{
+        margin-bottom: 15px;
+    }
+}
